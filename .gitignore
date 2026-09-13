@@ -1,0 +1,39 @@
+﻿# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+
+# ASP.NET Core
+appsettings.Development.json
+
+# User Secrets
+secrets.json
+
+# Logs
+*.log
+
+# Runtime files
+*.pidb
+*.svclog
+
+# Generated files
+Generated/
+
+# Local application settings
+appsettings.json

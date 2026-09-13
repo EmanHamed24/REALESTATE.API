@@ -1,0 +1,6 @@
+@REALESTATE_.API_HostAddress = http://localhost:5173
+
+GET {{REALESTATE_.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
