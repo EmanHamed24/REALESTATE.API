@@ -1,6 +1,4 @@
-﻿using REALESTATE_.API.models;
-
-namespace REALESTATE_.API.models
+﻿namespace REALESTATE_.API.models
 {
     public class Favorite
     {

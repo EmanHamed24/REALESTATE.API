@@ -1,5 +1,4 @@
 ﻿using REALESTATE_.API.DTos;
-using REALESTATE_.API.Services;
 using REALESTATE_.API.models;
 
 namespace REALESTATE_.API.Services
