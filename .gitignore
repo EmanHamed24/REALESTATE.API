@@ -37,3 +37,5 @@ Generated/
 
 # Local application settings
 appsettings.json
+
+REALESTATE .API/wwwroot/images/properties/*
