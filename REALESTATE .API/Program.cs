@@ -9,15 +9,24 @@ using System.Text;
 using REALESTATE_.API.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
+if (builder.Environment.IsEnvironment("Testing"))
+{
+    builder.Configuration.AddJsonFile(
+        "appsettings.Testing.json",
+        optional: false,
+        reloadOnChange: false);
+}
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new InvalidOperationException(
         "Connection string 'DefaultConnection' not found."
     );
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseMySQL(connectionString));
-
+if (!builder.Environment.IsEnvironment("Testing"))
+{
+    builder.Services.AddDbContext<AppDbContext>(options =>
+        options.UseMySQL(connectionString));
+}
 
 // JWT Configuration
 
@@ -148,3 +157,4 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.Run();
+public partial class Program { }

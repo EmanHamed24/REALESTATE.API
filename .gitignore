@@ -39,3 +39,6 @@ Generated/
 appsettings.json
 
 REALESTATE .API/wwwroot/images/properties/*
+
+# Testing configuration
+REALESTATE .API/appsettings.Testing.json
